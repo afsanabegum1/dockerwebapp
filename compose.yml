@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: afsanabegum1/automation:dbimage
+    image: afsanabegum1/automation:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: afsanabegum1/automation:appimage
+    image: afsanabegum1/automation:app
     ports:
       - "1111:8080"
     deploy:
